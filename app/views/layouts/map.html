@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AutosuggestAndTagging</title>
+  <%= stylesheet_link_tag    "places" %>
+  <%= javascript_include_tag "application", 'http://maps.googleapis.com/maps/api/js?sensor=false', 'map' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class='container'>
+   <%=render :partial => 'layouts/navigation_bar'%>
+   <%= yield %>  
+  </div>
+</body>
+</html>

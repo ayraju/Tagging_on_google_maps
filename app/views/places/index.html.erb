@@ -1,0 +1,26 @@
+
+<% content_for :heading do%>
+  <div class='header_content'>
+    <h2 class='page-header span12'>Listing of places tagged</h2>
+  </div>  
+<% end %>
+
+<div class='row'>
+  <% unless @places.empty? %>
+    <% @places.each do |place|%>
+    <div class='span12 pull-left solo_place'>
+      <div class='span6 pull-left'>
+        <h3 class='red'><%=place.name.capitalize%></h3>
+        <p>
+         <%=place.description%>
+        </p>
+      </div>
+      <div class='span4 pull-right'>
+       <%=link_to "Edit", edit_place_path(place) %>
+      </div>
+    </div>
+    <% end%>
+ <% else %>
+  <h3 class='red'>No places found</h3>
+ <% end%>
+</div>

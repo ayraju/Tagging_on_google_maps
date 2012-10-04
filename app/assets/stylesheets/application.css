@@ -1,0 +1,31 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require bootstrap/css/bootstrap.css
+ *= require bootstrap/css/bootstrap-responsive.css 
+ *= require common.css
+*/
+
+body{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.solo_place{
+    border-bottom: 1px solid #F7F7F7;
+    padding: 8px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+div.action_items{
+    padding: 10px;
+    border-bottom: 1px solid #EEE;
+}
